@@ -4,7 +4,7 @@ namespace XEngine\PushNotifications\Listener;
 use Flarum\Event\ConfigureWebApp;
 use Illuminate\Contracts\Events\Dispatcher;
 
-class AddApplicationAssets{
+class AddAssets{
 
     public function subscribe(Dispatcher $events)
     {

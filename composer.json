@@ -1,0 +1,37 @@
+{
+  "name": "flarum/flarum-ext-push-notifications",
+  "description": "Real-time push notifications for Android, iOS like platforms.",
+  "type": "flarum-extension",
+  "keywords": [
+    "push-notifications,notification,android,ios,flarum"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "T. Cem Yılmaz",
+      "email": "tidusdragonh3art@gmail.com"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/xengine/flarum-ext-push-notifications/issues",
+    "source": "https://github.com/xengine/flarum-ext-push-notifications"
+  },
+  "require": {
+    "flarum/core": "^0.1.0-beta.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "XEngine\\PushNotifications\\": "src/"
+    }
+  },
+  "extra": {
+    "flarum-extension": {
+      "title": "Push Notifications",
+      "icon": {
+        "name": "send",
+        "backgroundColor": "#DC3522",
+        "color": "#fff"
+      }
+    }
+  }
+}

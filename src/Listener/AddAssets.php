@@ -19,6 +19,13 @@ class AddApplicationAssets{
             ]);
             $event->addBootstrapper('xengine/push-notifications/main');
         }
+
+        if ($event->isAdmin()) {
+            $event->addAssets([
+                __DIR__.'/../../js/admin/dist/extension.js'
+            ]);
+            $event->addBootstrapper('xengine/push-notifications/main');
+        }
     }
 
 }

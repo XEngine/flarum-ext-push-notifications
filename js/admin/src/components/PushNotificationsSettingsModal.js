@@ -6,14 +6,19 @@ export default class PushNotificationsSettingsModal extends SettingsModal {
     }
 
     title() {
-        return app.translator.trans('xengine-push-notifications.admin.settings.title');
+        return app.translator.trans('xengine.pushnotifications.admin.settings.title');
     }
 
     form() {
         return [
             <div className="Form-group">
-                <label>{app.translator.trans('xengine-push-notifications.admin.settings.app_id_label')}</label>
-                <input className="FormControl" bidi={this.setting('xengine-push-notifications.app_id')}/>
+                <label>{app.translator.trans('xengine.pushnotifications.admin.settings.app_id_label')}</label>
+                <input className="FormControl" bidi={this.setting('xengine.pushnotifications.app_id')}/>
+            </div>,
+            <div className="Form-group">
+                <label>{app.translator.trans('xengine.pushnotifications.admin.settings.subdomain_label')}</label>
+                <small>{app.translator.trans('xengine.pushnotifications.admin.settings.subdomain_description')}</small>
+                <input className="FormControl" bidi={this.setting('xengine.pushnotifications.subdomain')}/>
             </div>
         ]
     }

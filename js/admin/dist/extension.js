@@ -23,7 +23,7 @@ System.register('xengine/push-notifications/components/PushNotificationsSettings
                 }, {
                     key: 'title',
                     value: function title() {
-                        return app.translator.trans('xengine-push-notifications.admin.settings.title');
+                        return app.translator.trans('xengine.pushnotifications.admin.settings.title');
                     }
                 }, {
                     key: 'form',
@@ -34,9 +34,23 @@ System.register('xengine/push-notifications/components/PushNotificationsSettings
                             m(
                                 'label',
                                 null,
-                                app.translator.trans('xengine-push-notifications.admin.settings.app_id_label')
+                                app.translator.trans('xengine.pushnotifications.admin.settings.app_id_label')
                             ),
-                            m('input', { className: 'FormControl', bidi: this.setting('xengine-push-notifications.app_id') })
+                            m('input', { className: 'FormControl', bidi: this.setting('xengine.pushnotifications.app_id') })
+                        ), m(
+                            'div',
+                            { className: 'Form-group' },
+                            m(
+                                'label',
+                                null,
+                                app.translator.trans('xengine.pushnotifications.admin.settings.subdomain_label')
+                            ),
+                            m(
+                                'small',
+                                null,
+                                app.translator.trans('xengine.pushnotifications.admin.settings.subdomain_description')
+                            ),
+                            m('input', { className: 'FormControl', bidi: this.setting('xengine.pushnotifications.subdomain') })
                         )];
                     }
                 }]);

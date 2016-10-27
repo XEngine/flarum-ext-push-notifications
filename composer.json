@@ -1,5 +1,5 @@
 {
-  "name": "flarum/flarum-ext-push-notifications",
+  "name": "xengine/flarum-ext-push-notifications",
   "description": "Real-time push notifications for Android, iOS like platforms.",
   "type": "flarum-extension",
   "keywords": [

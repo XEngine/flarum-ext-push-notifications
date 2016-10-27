@@ -1,3 +1,4 @@
 /vendor
 .idea
 /js/forum/node_modules
+.DS_Store

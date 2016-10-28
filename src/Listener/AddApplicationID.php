@@ -38,7 +38,8 @@ class AddApplicationID
                 $oneSignalAppID = $this->settings->get('xengine.pushnotifications.app_id');
                 $oneSignalSubDomain = $this->settings->get('xengine.pushnotifications.subdomain') ? $this->settings->get('xengine.pushnotifications.subdomain') : '';
 
-                $oneSignalScript = '<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js"></script>
+                $oneSignalScript = '<link rel="manifest" href="/manifest.json">';
+                $oneSignalScript .= '<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js"></script>
                                   <script>
                                     var OneSignal = window.OneSignal || [];
                                     OneSignal.push(["init", {

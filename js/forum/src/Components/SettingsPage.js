@@ -7,8 +7,8 @@ import SettingsPage from 'flarum/components/SettingsPage';
 import {extend} from 'flarum/extend';
 
 export default class SettingsPageHandler {
-    constructor() {
-        this.handler = new PushNotificationHandler();
+    constructor(userSession) {
+        this.handler = new PushNotificationHandler(userSession);
         extend(SettingsPage.prototype, 'privacyItems', (items) => {
             items.add('pushNotifications',
                 FieldSet.component({

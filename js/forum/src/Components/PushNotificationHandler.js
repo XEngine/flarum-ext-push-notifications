@@ -3,9 +3,9 @@ import User from 'flarum/models/User';
 import app from 'flarum/app';
 
 export default class PushNotificationHandler {
-    constructor() {
+    constructor(userSession) {
         User.prototype.onesignal_id = Model.attribute('onesignal_id');
-        this._userdata = app.session.user;
+        this._userdata = userSession;
     }
 
     getSignalID() {
